@@ -51,8 +51,8 @@ def get_all_repos(languages):
     # get all repos of most stars and forks, and different languages
     access_token = get_access_token()
     
-    repo_stars_api = 'https://api.github.com/search/repositories?q=stars:>0&sort=stars&per_page=100&access_token={}'.format(access_token)
-    repo_forks_api = 'https://api.github.com/search/repositories?q=forks:>0&sort=forks&per_page=100&access_token={}'.format(access_token)
+    repo_stars_api = 'https://api.github.com/search/repositories?q=stars:>0&sort=stars&per_page=10000&access_token={}'.format(access_token)
+    repo_forks_api = 'https://api.github.com/search/repositories?q=forks:>0&sort=forks&per_page=10000&access_token={}'.format(access_token)
     
     print("Get repos of most stars...")
     repos_stars = get_api_repos(repo_stars_api)
