@@ -6,9 +6,9 @@
 # show run time
 echo -e "\n----------Run Time:----------"
 date
-cd /home/li/code/github/Github-Ranking
+cd /c/github/Github-Ranking
 git pull
-source /home/li/tf36/bin/activate
+# source /home/li/tf36/bin/activate
 python save_most_stars_forks.py
 git add .
 today=`date +"%Y-%m-%d"`
