@@ -8,7 +8,7 @@ echo -e "\n----------Run Time:----------"
 date
 cd /c/github/Github-Ranking
 git pull
-# source /home/li/tf36/bin/activate
+source /c/github/virtualEnv/newenv/Scripts/activate
 python save_most_stars_forks.py
 git add .
 today=`date +"%Y-%m-%d"`
